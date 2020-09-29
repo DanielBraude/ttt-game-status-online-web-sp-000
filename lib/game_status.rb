@@ -29,3 +29,9 @@ def won?(board)
     position_1 == "O" && position_2 == "O" && position_3 == "O"
   end
 end
+
+def full?(board)
+  board.all? do |position|
+    position == "X" || position == "O"
+
+end
